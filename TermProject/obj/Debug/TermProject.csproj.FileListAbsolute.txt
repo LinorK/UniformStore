@@ -1,0 +1,15 @@
+C:\Users\Linor\source\repos\TermProject\TermProject\bin\Debug\TermProject.exe.config
+C:\Users\Linor\source\repos\TermProject\TermProject\bin\Debug\TermProject.exe
+C:\Users\Linor\source\repos\TermProject\TermProject\bin\Debug\TermProject.pdb
+C:\Users\Linor\source\repos\TermProject\TermProject\obj\Debug\TermProject.csprojAssemblyReference.cache
+C:\Users\Linor\source\repos\TermProject\TermProject\obj\Debug\TermProject.Properties.Resources.resources
+C:\Users\Linor\source\repos\TermProject\TermProject\obj\Debug\TermProject.csproj.GenerateResource.cache
+C:\Users\Linor\source\repos\TermProject\TermProject\obj\Debug\TermProject.csproj.CoreCompileInputs.cache
+C:\Users\Linor\source\repos\TermProject\TermProject\obj\Debug\TermProject.exe
+C:\Users\Linor\source\repos\TermProject\TermProject\obj\Debug\TermProject.pdb
+C:\Users\Linor\source\repos\TermProject\TermProject\obj\Debug\TermProject.frmLogIn.resources
+C:\Users\Linor\source\repos\TermProject\TermProject\obj\Debug\TermProject.FrmHomePage.resources
+C:\Users\Linor\source\repos\TermProject\TermProject\obj\Debug\TermProject.FrmProducts.resources
+C:\Users\Linor\source\repos\TermProject\TermProject\obj\Debug\TermProject.FrmAccount.resources
+C:\Users\Linor\source\repos\TermProject\TermProject\obj\Debug\TermProject.FrmPurchases.resources
+C:\Users\Linor\source\repos\TermProject\TermProject\obj\Debug\TermProject.FrmNewAccount.resources

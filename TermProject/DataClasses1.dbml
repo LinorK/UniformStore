@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="onlineStore" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-9FBGOVCS\SQLEXPRESS;Initial Catalog=onlineStore;Integrated Security=True" SettingsObjectName="TermProject.Properties.Settings" SettingsPropertyName="onlineStoreConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.customer" Member="customers">
+    <Type Name="customer">
+      <Column Name="CustomerID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="AccountBalance" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Association Name="customer_Order" Member="Orders" ThisKey="CustomerID" OtherKey="CustomerID" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Order]" Member="Orders">
+    <Type Name="Order">
+      <Column Name="OrderID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProductID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProductAmount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OrderDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TotalOrderAmount" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Association Name="customer_Order" Member="customer" ThisKey="CustomerID" OtherKey="CustomerID" Type="customer" IsForeignKey="true" />
+      <Association Name="product_Order" Member="product" ThisKey="ProductID" OtherKey="ProductID" Type="product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.product" Member="products">
+    <Type Name="product">
+      <Column Name="ProductID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProductName" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Association Name="product_Order" Member="Orders" ThisKey="ProductID" OtherKey="ProductID" Type="Order" />
+    </Type>
+  </Table>
+</Database>
